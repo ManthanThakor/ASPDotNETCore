@@ -19,13 +19,23 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
-            // Access configuration values
+            _logger.LogInformation("API Key: " + _appSettings.ApiKey);
+            _logger.LogInformation("Database Connection: " + _appSettings.DatabaseConnection);
+
+            var customVariable = Environment.GetEnvironmentVariable("MyCustomVariable");
+
+            if (string.IsNullOrEmpty(customVariable))
+            {
+                _logger.LogWarning("Custom Variable is not set.");
+            }
+            else
+            {
+                _logger.LogInformation("Custom Variable: " + customVariable);
+            }
+
             ViewBag.ApiKey = _appSettings.ApiKey;
             ViewBag.DatabaseConnection = _appSettings.DatabaseConnection;
-
-            // Access an environment variable
-            ViewBag.CustomVariable = Environment.GetEnvironmentVariable("MyCustomVariable");
-
+            ViewBag.CustomVariable = customVariable; // Pass to ViewBag
             return View();
         }
 
