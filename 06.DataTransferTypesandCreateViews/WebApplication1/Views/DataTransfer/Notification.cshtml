@@ -1,0 +1,9 @@
+﻿<h1>Notification</h1>
+@if (TempData["Notification"] != null)
+{
+    <p>@TempData["Notification"]</p> <!-- Accessing TempData -->
+}
+else
+{
+    <p>No notifications available.</p>
+}

@@ -1,0 +1,21 @@
+﻿@using WebApplication1.Models.Entities
+@model List<Product>
+
+@{
+    ViewData["Title"] = "GotAll";
+}
+
+<h1>@ViewData["Message"]</h1> <!-- Accessing ViewData -->
+
+<h2>Total Products: @ViewBag.TotalProducts</h2> <!-- Accessing ViewBag -->
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>
+            <strong>@product.Title</strong> - Stock Level: @product.StockLevel
+        </li>
+    }
+</ul>
+
+<p><a href="/DataTransfer/Notification">Go to Notification Page</a></p>
