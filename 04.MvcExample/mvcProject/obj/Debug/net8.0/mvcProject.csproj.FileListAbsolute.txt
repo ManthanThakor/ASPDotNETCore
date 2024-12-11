@@ -1,0 +1,9 @@
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.csproj.AssemblyReference.cache
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.AssemblyInfoInputs.cache
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.AssemblyInfo.cs
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.csproj.CoreCompileInputs.cache
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.MvcApplicationPartsAssemblyInfo.cache
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.RazorAssemblyInfo.cache
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.RazorAssemblyInfo.cs
+E:\manthan\ASPDotNETCore\04.MvcExample\mvcProject\obj\Debug\net8.0\mvcProject.sourcelink.json
