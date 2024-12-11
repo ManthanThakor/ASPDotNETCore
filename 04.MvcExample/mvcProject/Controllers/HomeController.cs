@@ -9,7 +9,6 @@ namespace mvcProject.Controllers
         {
             return View();
         }
-        [Route("GetProducts")]
         public IActionResult GetProductResult()
         {
             Product television = new()
