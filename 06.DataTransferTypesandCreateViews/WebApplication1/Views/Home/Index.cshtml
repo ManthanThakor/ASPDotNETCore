@@ -1,8 +1,86 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Home";
 }
 
-<h1>Index</h1>
+<div class="mt-5 container">
+    <!-- Header Section -->
+    <header class="mb-4 text-center">
+        <h1 class="display-4">Welcome to the Home Page</h1>
+        <p class="lead text-muted">Explore the features and enjoy the seamless experience</p>
+    </header>
 
-<!-- Button to redirect to DataTransfer/Notification -->
-<a asp-controller="DataTransfer" asp-action="GotAll" class="btn btn-primary">Go to DataShow Page</a>
+    <!-- Action Button Section -->
+    <div class="mb-5 text-center">
+        <a asp-controller="DataTransfer" asp-action="GotAll" class="btn btn-lg btn-primary shadow-sm">Go to DataShow Page</a>
+    </div>
+
+    <!-- Greeting Section -->
+    @{
+        var Greet = "Hi, how are you?";
+        if (Greet == "Hi, how are you?")
+        {
+            Greet += " Hello, what are you doing?";
+        }
+        else
+        {
+            Greet += " Hi, how are you?";
+        }
+    }
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Personalized Message</h5>
+            <p class="card-text">@Greet</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="mt-5">
+        <h2 class="mb-4 text-center">Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-speedometer2 fs-1 text-primary"></i>
+                        <h5 class="card-title mt-3">Fast and Reliable</h5>
+                        <p class="card-text">Experience quick and efficient performance with our platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-shield-check fs-1 text-success"></i>
+                        <h5 class="card-title mt-3">Secure</h5>
+                        <p class="card-text">Your data is protected with industry-standard security measures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="bi bi-stars fs-1 text-warning"></i>
+                        <h5 class="card-title mt-3">User Friendly</h5>
+                        <p class="card-text">Enjoy an intuitive and easy-to-navigate user interface.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Additional Bootstrap Styling -->
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+</style>
