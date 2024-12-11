@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using mvcProject.Models.Entities;
 
 namespace mvcProject.Controllers
 {
@@ -10,7 +11,15 @@ namespace mvcProject.Controllers
         }
         public IActionResult GetProductResult()
         {
-            return View();
+            Product television = new()
+            {
+                Id = 1,
+                Title = "Samsung Oled Tv",
+                StockLevel = 520,
+                StackStatus = true,
+            };
+
+            return View(television);
         }
     }
 }
